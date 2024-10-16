@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+.logo{
+    width: 10%;
+    height: 100%;
+    padding: 20px;
+}
+
+.logo > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo > a > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    align-items: center;
+}
+
+.nav-left{
+    width: 60%;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.nav-left  li{
+    list-style: none;
+}
+.nav-left  a{
+    text-decoration: none;
+}
+
+.nav-left-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.nav-left-info > li{
+    height: 100%;
+    display: flex;
+    transition: 0.5s;
+}
+
+.nav-left-info > li > a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    color: black;
+}
+
+.nav-left li:hover{
+    background-color: rgb(156, 158, 158);
+}
+
+.nav-right{
+    width: 30%;
+    height: 100%;
+}
+
+.nav-right li{
+    list-style: none;
+}
+
+.nav-right a{
+    text-decoration: none;
+}
+.nav-right-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.nav-right-info > li{
+    height: 100%;
+    display: flex;
+    transition: 0.5s;
+}
+
+.nav-right-info > li > a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    color: black;
+}
+
+.nav-right li:hover{
+    background-color: rgb(156, 158, 158);
+}
+
+.slider{
+    width: 100%;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.slider-image{
+    width: 73%;
+    height: 100%;
+    background-image: url(images/slider-photo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slider-content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    /* position: relative; */
+    padding: 0 30px;
+}
+
+.slider-content a{
+    text-decoration: none;
+}
+.slider-content > a{
+    width: 140px;
+    height: 20px;
+    background-color: yellow;
+}
+
+.slider-content h1{
+    padding: 8px 0;
+}
+
+.slider-link{
+    display: flex;
+    padding:15px;
+}
+
+
+.left-link{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    margin: 0 10px;
+}
+
+.left-link:hover{
+    transform: scale(1.1);
+}
+
+.right-link{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin: 0 10px;
+}
+
+.right-link:hover{
+    transform: scale(1.1);
+}
+
+.items-slider{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px; */
+}
+
+.item{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item a{
+    padding: 0 10px;
+}
+
+.item:hover{
+    transform: scale(1.1);
+}
+
+.products{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.products-features{
+    width: 348px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+.products-img{
+    width: 100%;
+    height: 50%;
+    /* display: flex; */
+    /* justify-content: center; */
+    margin-bottom: 5px;
+}
+
+.products-img img:hover{
+    transform: scale(1.05);
+    
+}
+
+.products-img img{
+    width: 320px;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.products-content{
+    width: 100%;
+    height: 50%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding: 0 5px;
+}
+.products-content h3{
+    padding: 3px 0;
+}
+
+.products-content p{
+    padding-bottom: 3px;
+}
+.products-content a{
+    /* display: flex; */
+    /* flex-direction: column; */
+    text-decoration: none;
+    padding-bottom: 3px;
+    color: rgb(44, 44, 236);
+}
+
+.products-content >a:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.half-slider-image{
+    width: 73%;
+    height: 100%;
+    background-image: url(images/headset-slide.jpg);
+    background-size: cover;
+}
+
+.half-slider-link{
+    display: flex;
+    padding:15px;
+}
+
+.half-slider-link .left-link{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    margin: 0 10px;
+}
+
+.half-slider-link .right-link{
+    width: 190px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin: 0 10px;
+}
+
+.business-products{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.business-products-features{
+    width: 348px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+.business-products-img{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    /* justify-content: center; */
+    margin-bottom: 5px;
+}
+.business-products-img img{
+    width: 320px;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.business-products-img img:hover{
+    transform: scale(1.05);
+    
+}
+
+.business-products-content{
+    width: 100%;
+    height: 50%;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 0 5px;
+}
+.business-products-content h3{
+    padding: 3px 0;
+}
+
+.business-products-content p{
+    padding-bottom: 3px;
+}
+.business-products-content a{
+    text-decoration: none;
+    padding: 5px;
+    color: rgb(44, 44, 236);
+}
+
+.business-products-content a:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.response-slider{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.container{
+    width: 73%;
+    height: 100%;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1{
+    padding: 10px 0;
+}
+
+.container a{
+    padding: 10px 0;
+    text-decoration: none;
+    color: rgb(44, 44, 236);
+}
+
+.container a:hover{
+    transform: scale(1.1);
+}
+
+.footer-slider{
+    width: 100%;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.footer-slider-image{
+    width: 73%;
+    height: 100%;
+    background-image: url(images/top-footer-image.png);
+    background-size: cover;
+}
+
+.footer-slider-content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    position: relative;
+    padding: 0 30px;
+}
+
+.footer-slider-content a{
+    text-decoration: none;
+}
+.footer-slider-content > a{
+    width: 140px;
+    height: 20px;
+    background-color: yellow;
+}
+
+.footer-slider-content h1{
+    padding: 8px 0;
+}
+
+.footer-slider-link{
+    display: flex;
+    padding:15px;
+}
+
+
+.footer-left-link{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    margin: 0 10px;
+}
+
+.footer-left-link:hover{
+    transform: scale(1.1);
+}
+
+.social-medias{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-medias .content{
+    width: 73%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.social-medias .content span{
+    padding-right:20px;
+}
+
+.social-medias .content a{
+    padding: 0 5px;
+}
+
+.social-medias .content a > img{
+    width: 40px;
+}
